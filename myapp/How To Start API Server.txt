@@ -1,0 +1,7 @@
+The functioning of the program is fairly simple:
+The data is stored on a local mongoDB database. Additional information about it are private and are currently stored on a personal file. 
+This program is an API that uses express to make GET requests to the database. Those can then be called within the file index.html, with an additional GET request. 
+This form allows for dynamic changes on the front-end without the need to restart the back-end server (express could allow to directly do back and front-end otherwise).
+To start the back-end server, run the following command, inside the folder myapp: set DEBUG=myapp:* & npm start
+(the debug part isn't necessary but can be useful)
+The back-end runs on the localhost port 3000. It currently requires to allow Access-Control-Allow-Origin. We use an add-on on Chrome for this. 

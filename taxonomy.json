@@ -1,0 +1,70 @@
+{
+	"nodes" : [ 
+
+	    {"id": "Task", "group": 1},
+	        {"id": "Find_outliers", "group": 1},
+	        {"id": "Understand_generalisations", "group": 1},
+	        {"id": "Find_patterns", "group": 1},
+	        {"id": "Make_predictions", "group": 1},
+	        {"id": "Link_movements_to_other_factors_like_activity_or_behavior", "group": 1},
+
+	    {"id": "Display_method", "group": 3},
+		    {"id": "Physical_nature", "group": 3},
+		    {"id": "Non_cartographic", "group": 3},
+            {"id": "Simple lines","group":3},
+            {"id": "Filtered lines","group":3},
+            {"id": "Lines coloured","group":3},
+            {"id": "Animation","group":3},
+            {"id": "Space-time cube","group":3},
+            {"id": "Filtered space-time cube","group":3},
+            {"id": "Clustered trajectories","group":3},
+            {"id": "Clustered in a space-time cube","group":3},
+            {"id": "Time bars","group":3},
+            {"id": "Trajectory wall","group":3},
+            {"id": "Lines with points showing events","group":3},
+            {"id": "Treemap","group":3},
+            {"id": "Density map","group":3},
+            {"id": "Spatial aggregation","group":3},
+            {"id": "Time series","group":3},
+            {"id": "Grid cells","group":3},
+            {"id": "Line-chart","group":3},
+            {"id": "Time mosaic","group":3},
+            {"id": "Flow map","group":3},
+            {"id": "Area chart","group":3},
+            {"id": "Lines with icons","group":3},
+            {"id": "Lines with charts","group":3},
+            {"id": "Space-time cube with charts","group":3},
+            {"id": "Statistics representations","group":3},
+            {"id": "Cone","group":3},
+
+
+
+        {"id": "jlbs16-Understanding_movement_data_quality", "group": 2},
+        {"id": "VAST-main", "group": 2},
+        {"id": "Andrienko-2013-Scalable analysis of movement data for extracting and exploring significant places", "group": 2},
+        {"id":"Zeng-2017-Visualizing the Relationship Between Human", "group":2}
+	],
+
+	"links" : [
+        {"source": "Task", "target": "Find_outliers", "value": 10},
+                {"source": "Find_outliers", "target": "jlbs16-Understanding_movement_data_quality", "value": 1},
+        {"source": "Task", "target": "Understand_generalisations", "value": 10},
+                {"source": "Understand_generalisations", "target": "VAST-main", "value": 1},
+                {"source": "Understand_generalisations", "target": "VAST-main", "value": 1},
+        {"source": "Task", "target": "Find_patterns", "value": 10},
+        {"source": "Task", "target": "Make_predictions", "value": 10},
+    	{"source": "Task", "target": "Link_movements_to_other_factors_like_activity_or_behavior", "value": 1},    
+            	{"source": "Link_movements_to_other_factors_like_activity_or_behavior", "target": "Andrienko-2013-Scalable analysis of movement data for extracting and exploring significant places", "value": 1},
+            	{"source": "Link_movements_to_other_factors_like_activity_or_behavior", "target": "Zeng-2017-Visualizing the Relationship Between Human", "value": 1},
+
+
+        {"source": "Display_method", "target": "Physical_nature", "value": 10},
+        	    {"source": "Physical_nature", "target": "Andrienko-2013-Scalable analysis of movement data for extracting and exploring significant places", "value": 1},
+        	    {"source": "Physical_nature", "target": "jlbs16-Understanding_movement_data_quality", "value": 1},
+        	    {"source": "Physical_nature", "target": "jlbs16-Understanding_movement_data_quality", "value": 1},
+        {"source": "Display_method", "target": "Non_cartographic", "value": 10},
+        	    {"source": "Non_cartographic", "target": "Andrienko-2013-Scalable analysis of movement data for extracting and exploring significant places", "value": 1},
+        	    {"source": "Non_cartographic", "target": "Zeng-2017-Visualizing the Relationship Between Human", "value": 1},
+        	    {"source": "Non_cartographic", "target": "VAST-main", "value": 1}
+	]
+}
