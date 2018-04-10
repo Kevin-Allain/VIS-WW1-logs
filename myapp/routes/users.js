@@ -39,6 +39,7 @@ router.get('/:userId&:nameSoldier', function(req, res, next) {
 	res.send(req.params);
 });
 
+
 router.get('/fruit/:fruitName', function(req, res) {
     var data = {
         "fruit": {
@@ -49,6 +50,26 @@ router.get('/fruit/:fruitName', function(req, res) {
 	res.send(data);
 });
 
+// THESE ARE THE EXAMPLES TO WORK ON TOP OF
+// ----------------------------------------
+router.get('/soldier/:userId', function(req, res) {
+    var data = {
+        "soldier": {
+            "userId": req.params.userId,
+        }
+    }; 
+	res.send(data);
+});
+router.get('/soldier/:userId/:nameSoldier', function(req, res) {
+    var data = {
+        "soldier": {
+            "userId": req.params.userId,
+            "nameSoldier": req.params.nameSoldier
+        }
+    }; 
+	res.send(data);
+});
+// ----------------------------------------
 
 router.get('/fruit/:fruitName/:fruitColor', function(req, res) {
     var data = {
@@ -60,7 +81,6 @@ router.get('/fruit/:fruitName/:fruitColor', function(req, res) {
 
 	res.send(data);
 });
-
 
 router.get('/fruit/:fruitName.:fruitColor', function(req, res) {
     var data = {
