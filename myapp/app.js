@@ -9,7 +9,11 @@ var usersRouter = require('./routes/users');
 var diary_groupsRouter = require('./routes/diary_groups');
 var diary_subjectsRouter = require('./routes/diary_subjects');
 
+var cors = require('cors')
+
 var app = express();
+
+app.use(cors())
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
